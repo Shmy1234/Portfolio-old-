@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Van Gogh Oil Paint Design System */
+@layer base {
+  :root {
+    /* Canvas & Base Colors */
+    --background: 43 29% 96%;
+    --foreground: 213 50% 20%;
+
+    /* Cards with cream canvas feel */
+    --card: 40 33% 94%;
+    --card-foreground: 213 50% 20%;
+
+    /* Popover */
+    --popover: 40 33% 94%;
+    --popover-foreground: 213 50% 20%;
+
+    /* Deep Navy - Primary */
+    --primary: 210 53% 24%;
+    --primary-foreground: 43 29% 96%;
+
+    /* Muted Teal - Secondary */
+    --secondary: 180 26% 39%;
+    --secondary-foreground: 43 29% 96%;
+
+    /* Cream Canvas - Muted */
+    --muted: 40 20% 88%;
+    --muted-foreground: 213 30% 40%;
+
+    /* Burnt Sienna - Accent */
+    --accent: 19 60% 40%;
+    --accent-foreground: 43 29% 96%;
+
+    /* Sunflower Gold - Highlight */
+    --highlight: 43 80% 50%;
+    --highlight-foreground: 213 50% 15%;
+
+    /* Destructive */
+    --destructive: 0 65% 45%;
+    --destructive-foreground: 43 29% 96%;
+
+    /* Borders & Inputs */
+    --border: 30 25% 75%;
+    --input: 30 25% 80%;
+    --ring: 210 53% 24%;
+
+    --radius: 0.5rem;
+
+    /* Oil Paint Special Colors */
+    --paint-cream: 43 29% 96%;
+    --paint-navy: 210 53% 24%;
+    --paint-teal: 180 26% 39%;
+    --paint-sienna: 19 60% 40%;
+    --paint-gold: 43 80% 50%;
+    --paint-ochre: 35 70% 55%;
+    --frame-color: 19 60% 40%;
+
+    /* Sidebar */
+    --sidebar-background: 40 33% 94%;
+    --sidebar-foreground: 213 50% 20%;
+    --sidebar-primary: 210 53% 24%;
+    --sidebar-primary-foreground: 43 29% 96%;
+    --sidebar-accent: 19 60% 40%;
+    --sidebar-accent-foreground: 43 29% 96%;
+    --sidebar-border: 30 25% 75%;
+    --sidebar-ring: 210 53% 24%;
+  }
+
+  .dark {
+    --background: 213 50% 8%;
+    --foreground: 43 29% 92%;
+
+    --card: 213 45% 12%;
+    --card-foreground: 43 29% 92%;
+
+    --popover: 213 45% 12%;
+    --popover-foreground: 43 29% 92%;
+
+    --primary: 43 80% 60%;
+    --primary-foreground: 213 50% 10%;
+
+    --secondary: 180 30% 35%;
+    --secondary-foreground: 43 29% 92%;
+
+    --muted: 213 30% 18%;
+    --muted-foreground: 43 20% 70%;
+
+    --accent: 19 65% 50%;
+    --accent-foreground: 43 29% 96%;
+
+    --highlight: 43 85% 55%;
+    --highlight-foreground: 213 50% 10%;
+
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 43 29% 96%;
+
+    --border: 213 30% 25%;
+    --input: 213 30% 25%;
+    --ring: 43 80% 60%;
+
+    --paint-cream: 43 20% 90%;
+    --paint-navy: 210 40% 70%;
+    --paint-teal: 180 30% 50%;
+    --paint-sienna: 19 65% 55%;
+    --paint-gold: 43 85% 60%;
+    --paint-ochre: 35 75% 60%;
+
+    --sidebar-background: 213 45% 10%;
+    --sidebar-foreground: 43 29% 92%;
+    --sidebar-primary: 43 80% 60%;
+    --sidebar-primary-foreground: 213 50% 10%;
+    --sidebar-accent: 19 65% 50%;
+    --sidebar-accent-foreground: 43 29% 96%;
+    --sidebar-border: 213 30% 25%;
+    --sidebar-ring: 43 80% 60%;
+  }
+
+  /* Night Theme */
+  .theme-night {
+    --background: 220 50% 8%;
+    --foreground: 213 50% 20%;
+    --card: 40 33% 94%;
+    --card-foreground: 213 50% 20%;
+    --primary: 210 53% 24%;
+    --primary-foreground: 43 29% 96%;
+    --secondary: 180 26% 39%;
+    --secondary-foreground: 43 29% 96%;
+    --muted: 40 20% 88%;
+    --muted-foreground: 213 30% 40%;
+    --accent: 19 60% 40%;
+    --accent-foreground: 43 29% 96%;
+    --border: 30 25% 75%;
+    --paint-sienna: 19 60% 40%;
+    --paint-gold: 43 80% 50%;
+    --paint-navy: 210 53% 24%;
+    --frame-color: 19 60% 40%;
+  }
+
+  /* Winter Theme */
+  .theme-winter {
+    --background: 0 0% 96%;
+    --foreground: 213 50% 20%;
+    --card: 40 33% 94%;
+    --card-foreground: 213 50% 20%;
+    --primary: 210 53% 24%;
+    --primary-foreground: 43 29% 96%;
+    --secondary: 180 26% 39%;
+    --secondary-foreground: 43 29% 96%;
+    --muted: 40 20% 88%;
+    --muted-foreground: 213 30% 40%;
+    --accent: 19 60% 40%;
+    --accent-foreground: 43 29% 96%;
+    --border: 30 25% 75%;
+    --paint-sienna: 19 60% 40%;
+    --paint-gold: 43 80% 50%;
+    --paint-navy: 210 53% 24%;
+    --frame-color: 19 60% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  /* Painted Card Effect */
+  .painted-card {
+    @apply relative bg-card rounded-sm overflow-hidden;
+    box-shadow: 
+      inset 0 1px 0 0 hsl(var(--paint-cream) / 0.4),
+      0 4px 16px -4px hsl(var(--paint-navy) / 0.15),
+      0 8px 32px -8px hsl(var(--paint-sienna) / 0.1);
+  }
+
+  .painted-card::before {
+    content: '';
+    @apply absolute inset-0 pointer-events-none;
+    background: 
+      radial-gradient(ellipse at 20% 20%, hsl(var(--paint-gold) / 0.08) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 80%, hsl(var(--paint-sienna) / 0.06) 0%, transparent 50%);
+  }
+
+  /* Oil Paint Frame */
+  .oil-frame {
+    @apply relative;
+    border: 4px solid hsl(var(--paint-sienna) / 0.6);
+    box-shadow: 
+      inset 0 0 0 2px hsl(var(--frame-color) / 0.4),
+      inset 0 0 20px hsl(var(--paint-navy) / 0.1),
+      0 8px 32px -8px hsl(var(--paint-navy) / 0.3);
+  }
+
+  /* Brushstroke Border */
+  .brushstroke-border {
+    @apply relative;
+    border: 3px solid transparent;
+    background: 
+      linear-gradient(hsl(var(--card)), hsl(var(--card))) padding-box,
+      linear-gradient(
+        135deg, 
+        hsl(var(--paint-sienna)) 0%, 
+        hsl(var(--paint-gold)) 25%, 
+        hsl(var(--paint-teal)) 50%, 
+        hsl(var(--paint-sienna)) 75%, 
+        hsl(var(--paint-gold)) 100%
+      ) border-box;
+  }
+
+  /* Paint Daub Badge */
+  .paint-daub {
+    @apply inline-flex items-center px-3 py-1 text-sm font-medium rounded-full;
+    background: linear-gradient(
+      135deg,
+      hsl(var(--paint-gold) / 0.9) 0%,
+      hsl(var(--paint-ochre) / 0.8) 100%
+    );
+    color: hsl(var(--paint-navy));
+    box-shadow: 
+      2px 2px 4px hsl(var(--paint-sienna) / 0.3),
+      inset 0 1px 2px hsl(var(--paint-cream) / 0.5);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+
+  .paint-daub-teal {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--paint-teal) / 0.9) 0%,
+      hsl(180 30% 45% / 0.8) 100%
+    );
+    color: hsl(var(--paint-cream));
+  }
+
+  .paint-daub-navy {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--paint-navy) / 0.9) 0%,
+      hsl(210 45% 30% / 0.8) 100%
+    );
+    color: hsl(var(--paint-cream));
+  }
+
+  .paint-daub-sienna {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--paint-sienna) / 0.9) 0%,
+      hsl(19 55% 35% / 0.8) 100%
+    );
+    color: hsl(var(--paint-cream));
+  }
+
+  /* Timeline Styles */
+  .timeline-line {
+    @apply absolute left-1/2 transform -translate-x-1/2 w-1 h-full;
+    background: linear-gradient(
+      180deg,
+      hsl(var(--paint-sienna)) 0%,
+      hsl(var(--paint-gold)) 25%,
+      hsl(var(--paint-teal)) 50%,
+      hsl(var(--paint-sienna)) 75%,
+      hsl(var(--paint-gold)) 100%
+    );
+  }
+
+  .timeline-node {
+    @apply w-5 h-5 rounded-full relative z-10;
+    background: radial-gradient(
+      circle at 30% 30%,
+      hsl(var(--paint-gold)) 0%,
+      hsl(var(--paint-sienna)) 70%
+    );
+    box-shadow: 
+      0 0 0 4px hsl(var(--background)),
+      0 0 0 6px hsl(var(--paint-sienna) / 0.5),
+      0 4px 12px hsl(var(--paint-navy) / 0.3);
+  }
+
+  /* Canvas Background */
+  .canvas-bg {
+    @apply relative;
+    background-color: hsl(var(--background));
+    background-image: url('/canvas-texture.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  /* Paint Splatter Effect */
+  .paint-splatter::before {
+    content: '';
+    @apply absolute -top-2 -left-2 w-8 h-8 rounded-full opacity-60;
+    background: radial-gradient(
+      ellipse at center,
+      hsl(var(--paint-gold)) 0%,
+      transparent 70%
+    );
+  }
+
+  /* Navbar Glass Effect */
+  .navbar-glass {
+    @apply backdrop-blur-md;
+    background: linear-gradient(
+      180deg,
+      hsl(var(--card) / 0.95) 0%,
+      hsl(var(--card) / 0.85) 100%
+    );
+    border-bottom: 2px solid hsl(var(--paint-sienna) / 0.3);
+  }
+
+  /* Section Heading with Paint Stroke */
+  .section-heading {
+    @apply relative inline-block;
+  }
+
+  .section-heading::after {
+    content: '';
+    @apply absolute -bottom-2 left-0 w-full h-1;
+    background: linear-gradient(
+      90deg,
+      hsl(var(--paint-sienna)) 0%,
+      hsl(var(--paint-gold)) 50%,
+      transparent 100%
+    );
+    border-radius: 50%;
+  }
+}
+
+@layer utilities {
+  .scroll-mt-nav {
+    scroll-margin-top: 5rem;
+  }
+}
+
+/* Custom Paint-Styled Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(40 33% 94%);
+  border-left: 1px solid hsl(30 25% 75%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    hsl(19 60% 45%) 0%,
+    hsl(19 60% 35%) 50%,
+    hsl(19 60% 45%) 100%
+  );
+  border-radius: 6px;
+  border: 2px solid hsl(40 33% 94%);
+  box-shadow: inset 0 0 4px hsl(43 80% 50% / 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    hsl(19 60% 50%) 0%,
+    hsl(19 60% 40%) 50%,
+    hsl(19 60% 50%) 100%
+  );
+}
+
+::-webkit-scrollbar-corner {
+  background: hsl(40 33% 94%);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(19 60% 40%) hsl(40 33% 94%);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: hsl(213 45% 12%);
+  border-left: 1px solid hsl(213 30% 25%);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    hsl(43 80% 55%) 0%,
+    hsl(43 80% 45%) 50%,
+    hsl(43 80% 55%) 100%
+  );
+  border: 2px solid hsl(213 45% 12%);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    hsl(43 80% 60%) 0%,
+    hsl(43 80% 50%) 50%,
+    hsl(43 80% 60%) 100%
+  );
+}
+
+.dark ::-webkit-scrollbar-corner {
+  background: hsl(213 45% 12%);
+}
+
+.dark * {
+  scrollbar-color: hsl(43 80% 50%) hsl(213 45% 12%);
+}
